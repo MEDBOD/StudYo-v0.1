@@ -1,0 +1,11 @@
+.logos-row {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 48px 70px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  font-size: 13px;
+}

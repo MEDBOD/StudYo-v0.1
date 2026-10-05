@@ -1,0 +1,13 @@
+.site-footer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 36px 48px 60px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.site-footer .logo span {
+  color: var(--amber);
+}

@@ -1,0 +1,71 @@
+@import './Panel.css';
+
+.canvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.canvas-header h3 {
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.canvas-header .date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.today-brief {
+  background: rgba(255, 159, 90, 0.08);
+  border: 1px solid rgba(255, 159, 90, 0.25);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  font-size: 13.5px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.file-card {
+  background: var(--bg-surface-2);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid transparent;
+}
+
+.file-card.focused {
+  border-color: var(--amber);
+}
+
+.file-meta .ft1 {
+  font-size: 14.5px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.file-meta .ft2 {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.file-badge {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.file-badge.due {
+  background: rgba(255, 159, 90, 0.15);
+  color: #c96a2a;
+}

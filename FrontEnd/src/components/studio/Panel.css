@@ -1,0 +1,15 @@
+.panel {
+  background: var(--bg-surface);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.panel h4 {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+  margin: 0 0 14px;
+  font-weight: 500;
+}

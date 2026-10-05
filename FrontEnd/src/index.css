@@ -1,0 +1,107 @@
+/* ===== THEME TOKENS ===== */
+:root {
+  --amber: #ff9f5a;
+  --amber-on: #12172b;
+  --mint: #5fe1c9;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+[data-theme='light'] {
+  --bg-page: #f1eee6;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f6f3ec;
+  --bg-inset: #12172b;
+  --bg-inset-2: #1b2140;
+  --text-primary: #12172b;
+  --text-secondary: #6b7094;
+  --text-on-inset: #d8dae8;
+  --text-on-inset-muted: #8a90ac;
+  --border: rgba(18, 23, 43, 0.12);
+  --border-inset: rgba(241, 238, 230, 0.14);
+  --shadow: 0 20px 50px rgba(18, 23, 43, 0.14);
+}
+
+[data-theme='dark'] {
+  --bg-page: #0d1120;
+  --bg-surface: #1b2140;
+  --bg-surface-2: #242b52;
+  --bg-inset: #05070f;
+  --bg-inset-2: #12172b;
+  --text-primary: #f1eee6;
+  --text-secondary: #9ba0c0;
+  --text-on-inset: #d8dae8;
+  --text-on-inset-muted: #8a90ac;
+  --border: rgba(241, 238, 230, 0.1);
+  --border-inset: rgba(241, 238, 230, 0.1);
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.btn-primary {
+  background: var(--text-primary);
+  color: var(--bg-page);
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  border: none;
+}
+
+.btn-ghost {
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-primary);
+}

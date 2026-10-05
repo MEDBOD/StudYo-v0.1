@@ -1,0 +1,70 @@
+@import './Panel.css';
+
+.agent-card {
+  background: var(--bg-surface-2);
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-bottom: 10px;
+}
+
+.agent-card .a-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.agent-card .a-name .status {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.agent-card .a-desc {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.flow-mini {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.flow-node {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+
+.flow-sep {
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.build-btn {
+  width: 100%;
+  margin-top: 6px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--text-secondary);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.build-btn:hover {
+  border-color: var(--amber);
+  color: var(--text-primary);
+}

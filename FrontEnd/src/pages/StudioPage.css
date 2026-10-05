@@ -1,0 +1,23 @@
+.studio-page {
+  min-height: 100vh;
+  background: var(--bg-page);
+}
+
+.studio-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 280px;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,91 @@
+.hero-visual {
+  background: var(--bg-inset);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.hv-bar {
+  display: flex;
+  gap: 6px;
+  padding: 4px 6px 14px;
+}
+
+.hv-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-inset);
+}
+
+.hv-grid {
+  display: grid;
+  grid-template-columns: 0.62fr 1.5fr 0.9fr;
+  gap: 8px;
+  height: 300px;
+}
+
+.hv-col {
+  background: var(--bg-inset-2);
+  border-radius: 12px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.hv-col h4 {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-on-inset-muted);
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.hv-tool {
+  background: rgba(241, 238, 230, 0.06);
+  border-radius: 6px;
+  padding: 7px 8px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: var(--text-on-inset);
+}
+
+.hv-canvas {
+  background: var(--bg-surface);
+  border-radius: 8px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hv-canvas .hv-file {
+  background: var(--bg-surface-2);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 11px;
+  color: var(--text-primary);
+}
+
+.hv-canvas .hv-file.active {
+  border: 1.5px solid var(--amber);
+}
+
+.hv-agent {
+  background: rgba(95, 225, 201, 0.1);
+  border: 1px solid rgba(95, 225, 201, 0.35);
+  border-radius: 6px;
+  padding: 7px 8px;
+  margin-bottom: 6px;
+  font-size: 10.5px;
+  color: var(--mint);
+}
+
+@media (max-width: 900px) {
+  .hv-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
