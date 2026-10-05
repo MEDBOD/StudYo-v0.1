@@ -70,3 +70,4 @@ src/
 5. **CSS Modules**: styles are currently plain CSS per component folder. If class names start
    colliding as the app grows, rename files to `Component.module.css` and update the imports —
    the component structure won't need to change.
+6. **Amazing**: Pull Test from gitHub Desktop.
