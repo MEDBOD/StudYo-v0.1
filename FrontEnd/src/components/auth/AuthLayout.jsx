@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./auth.css";
 
-// testing git desktop from vscode
+// testing  this and that for github
 export default function AuthLayout({ title, subtitle, children }) {
   return (
     <div className="auth-shell">
